@@ -1,0 +1,9 @@
+{
+  "name": "photo-upscaler",
+  "displayName": "Photo Upscaler",
+  "version": "0.1.0",
+  "description": "Upscale photos with AI on your own computer. Photos stay local.",
+  "author": { "name": "The AI Solopreneurs" },
+  "repository": "https://github.com/theaisolopreneurs-stack/photo_upscaler",
+  "mcpServers": "./dist/photo-upscaler.mcpb"
+}

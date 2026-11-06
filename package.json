@@ -1,0 +1,25 @@
+{
+  "name": "photo-upscaler",
+  "version": "0.1.0",
+  "description": "Local AI photo upscaling for Claude. Photos stay on your computer.",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "main": "server/index.mjs",
+  "bin": {
+    "photo-upscaler": "cli.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "pack:mcpb": "mcpb pack . dist/photo-upscaler.mcpb"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "onnxruntime-node": "1.31.1",
+    "sharp": "0.35.5",
+    "zod": "^4.6.7"
+  }
+}

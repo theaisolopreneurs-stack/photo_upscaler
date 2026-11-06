@@ -1,0 +1,25 @@
+{
+  "manifest_version": "0.3",
+  "name": "photo-upscaler",
+  "display_name": "Photo Upscaler",
+  "version": "0.1.0",
+  "description": "Upscale photos with AI on your own computer. Photos stay local.",
+  "author": { "name": "The AI Solopreneurs" },
+  "license": "UNLICENSED",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.mjs",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/index.mjs"]
+    }
+  },
+  "tools": [
+    { "name": "system_check", "description": "Report the AI backends that work on this computer." },
+    { "name": "upscale_image", "description": "Upscale one local photo." }
+  ],
+  "compatibility": {
+    "platforms": ["win32", "darwin"],
+    "runtimes": { "node": ">=20" }
+  }
+}
